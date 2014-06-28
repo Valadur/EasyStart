@@ -1,0 +1,21 @@
+[
+{
+  "modid": "EasyStart",
+  "name": "EasyStart",
+  "description": "Valadur's mod for an easy start in minecraft!",
+  "version": "1.0",
+  "mcversion": "1.7.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "valadur"
+  ],
+  "credits": "Credits to pahimar and the whole vanilla minecraft, minecraft forge and mcp team",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
