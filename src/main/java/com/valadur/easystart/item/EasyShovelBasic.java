@@ -5,18 +5,16 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class EasyPickaxeBasic extends EasyBasicTool{
+public class EasyShovelBasic extends EasyBasicTool {
 
-    public EasyPickaxeBasic(){
+    public EasyShovelBasic() {
         super();
-        setUnlocalizedName(Names.Items.EASYPICKAXE_BASIC);
-        setHarvestLevel("pickaxe",3);
+        setUnlocalizedName(Names.Items.EASYSHOVEL_BASIC);
     }
 
     @Override
     public float getDigSpeed(ItemStack itemstack, Block block, int metadata){
-        // This includes ores
-        if(block.getMaterial() == Material.rock){
+        if(block.getMaterial() == Material.clay || block.getMaterial() == Material.sand || block.getMaterial() == Material.ground || block.getMaterial() == Material.grass){
             return 5.0F;
         }
         return 1.0F;

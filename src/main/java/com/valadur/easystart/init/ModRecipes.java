@@ -6,17 +6,20 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
-import static net.minecraft.init.Blocks.dirt;
-
 public class ModRecipes {
 
-    // Initialize all the Recipes
-    public static void init(){
-        GameRegistry.addShapelessRecipe(new ItemStack(Items.cookie, 4), dirt);
-        GameRegistry.addShapedRecipe(new ItemStack(ModItems.easyPickaxeBasic,1), "xx " , "xx ", "   " , 'x' , new ItemStack(Blocks.dirt));
-        // To make it work with any metadata
-        ItemStack easyPickaxeBasic = new ItemStack(ModItems.easyPickaxeBasic);
-        easyPickaxeBasic.setItemDamage(OreDictionary.WILDCARD_VALUE);
-        GameRegistry.addShapedRecipe(new ItemStack(ModItems.getEasyPickaxeUltimate,1), "x x" , " y " , "x x" , 'x', new ItemStack(Items.diamond), 'y' , easyPickaxeBasic);
+    // Initialize all the recipes
+    public static void init() {
+
+        // Shapeless recipes
+        GameRegistry.addShapelessRecipe(new ItemStack(Items.cookie, 4), new ItemStack(Blocks.dirt));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.easyPickaxeBasic,1), new ItemStack(Blocks.stone),new ItemStack(Blocks.stone),new ItemStack(Blocks.stone),new ItemStack(Blocks.stone));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.easyAxeBasic,1), new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.easyShovelBasic,1), new ItemStack(Blocks.dirt),new ItemStack(Blocks.dirt),new ItemStack(Blocks.dirt),new ItemStack(Blocks.dirt));
+
+        // Shaped recipes
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.easyPickaxeUltimate, 1), "x x", " y ", "x x", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(ModItems.easyPickaxeBasic,1,OreDictionary.WILDCARD_VALUE));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.easyAxeUltimate, 1), "x x", " y ", "x x", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(ModItems.easyAxeBasic,1,OreDictionary.WILDCARD_VALUE));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.easyShovelUltimate, 1), "x x", " y ", "x x", 'x', new ItemStack(Items.diamond), 'y', new ItemStack(ModItems.easyShovelBasic,1,OreDictionary.WILDCARD_VALUE));
     }
 }
