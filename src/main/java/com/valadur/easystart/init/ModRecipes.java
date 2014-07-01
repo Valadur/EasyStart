@@ -13,8 +13,8 @@ public class ModRecipes {
 
         // Shapeless recipes
         GameRegistry.addShapelessRecipe(new ItemStack(Items.cookie, 4), new ItemStack(Blocks.dirt));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.easyPickaxeBasic,1), new ItemStack(Blocks.stone),new ItemStack(Blocks.stone),new ItemStack(Blocks.stone),new ItemStack(Blocks.stone));
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.easyAxeBasic,1), new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.planks, 1, OreDictionary.WILDCARD_VALUE));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.easyPickaxeBasic,1), new ItemStack(Blocks.cobblestone),new ItemStack(Blocks.cobblestone),new ItemStack(Blocks.cobblestone),new ItemStack(Blocks.cobblestone));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.easyAxeBasic,1), new ItemStack(Blocks.log, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.log, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.log, 1, OreDictionary.WILDCARD_VALUE), new ItemStack(Blocks.log, 1, OreDictionary.WILDCARD_VALUE));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.easyShovelBasic,1), new ItemStack(Blocks.dirt),new ItemStack(Blocks.dirt),new ItemStack(Blocks.dirt),new ItemStack(Blocks.dirt));
 
         // Shaped recipes

@@ -1,5 +1,6 @@
 package com.valadur.easystart.item;
 
+import com.valadur.easystart.reference.ConfigurationValues;
 import com.valadur.easystart.reference.Names;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -16,7 +17,7 @@ public class EasyPickaxeUltimate extends EasyUltimateTool {
     public float getDigSpeed(ItemStack itemstack, Block block, int metadata){
         // This includes ores
         if(block.getMaterial() == Material.rock){
-            return 10.0F;
+            return ConfigurationValues.TOOL_SPEED_BASE * ConfigurationValues.TOOL_SPEED_MODIFIER * ConfigurationValues.TOOL_SPEED_ULTIMATE_MODIFIER;
         }
         return 1.0F;
     }
