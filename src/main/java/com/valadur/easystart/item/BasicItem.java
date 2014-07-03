@@ -7,9 +7,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class EasyBasicTool extends Item {
+public abstract class BasicItem extends Item {
 
-    public EasyBasicTool(){
+    public BasicItem(){
         super();
         setCreativeTab(CreativeTabs.tabMisc);
         setMaxStackSize(1);

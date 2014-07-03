@@ -6,11 +6,11 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class EasyShovelUltimate extends EasyUltimateTool {
+public class ShovelUltimate extends UltimateItem {
 
-    public EasyShovelUltimate() {
+    public ShovelUltimate() {
         super();
-        setUnlocalizedName(Names.Items.EASYSHOVEL_ULTIMATE);
+        setUnlocalizedName(Names.Items.SHOVEL_ULTIMATE);
     }
 
     @Override

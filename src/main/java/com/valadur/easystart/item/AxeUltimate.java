@@ -6,17 +6,17 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class EasyAxeBasic extends EasyBasicTool {
+public class AxeUltimate extends UltimateItem {
 
-    public EasyAxeBasic() {
+    public AxeUltimate() {
         super();
-        setUnlocalizedName(Names.Items.EASYAXE_BASIC);
+        setUnlocalizedName(Names.Items.AXE_ULTIMATE);
     }
 
     @Override
     public float getDigSpeed(ItemStack itemstack, Block block, int metadata){
         if(block.getMaterial() == Material.wood || block.getMaterial() == Material.leaves){
-            return ConfigurationValues.TOOL_SPEED_BASE * ConfigurationValues.TOOL_SPEED_MODIFIER;
+            return ConfigurationValues.TOOL_SPEED_BASE * ConfigurationValues.TOOL_SPEED_MODIFIER * ConfigurationValues.TOOL_SPEED_ULTIMATE_MODIFIER;
         }
         return 1.0F;
     }

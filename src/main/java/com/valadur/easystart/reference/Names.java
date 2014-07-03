@@ -2,11 +2,13 @@ package com.valadur.easystart.reference;
 
 public class Names {
     public static class Items{
-        public static final String EASYPICKAXE_BASIC = "easyPickaxeBasic";
-        public static final String EASYPICKAXE_ULTIMATE = "easyPickaxeUltimate";
-        public static final String EASYAXE_BASIC = "easyAxeBasic";
-        public static final String EASYAXE_ULTIMATE = "easyAxeUltimate";
-        public static final String EASYSHOVEL_BASIC = "easyShovelBasic";
-        public static final String EASYSHOVEL_ULTIMATE = "easyShovelUltimate";
+        public static final String PICKAXE_BASIC = "pickaxeBasic";
+        public static final String PICKAXE_ULTIMATE = "pickaxeUltimate";
+        public static final String AXE_BASIC = "axeBasic";
+        public static final String AXE_ULTIMATE = "axeUltimate";
+        public static final String SHOVEL_BASIC = "shovelBasic";
+        public static final String SHOVEL_ULTIMATE = "shovelUltimate";
+        public static final String SWORD_BASIC = "swordBasic";
+        public static final String SWORD_ULTIMATE = "swordUltimate";
     }
 }

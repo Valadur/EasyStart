@@ -6,16 +6,16 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class EasyShovelBasic extends EasyBasicTool {
+public class AxeBasic extends BasicItem {
 
-    public EasyShovelBasic() {
+    public AxeBasic() {
         super();
-        setUnlocalizedName(Names.Items.EASYSHOVEL_BASIC);
+        setUnlocalizedName(Names.Items.AXE_BASIC);
     }
 
     @Override
     public float getDigSpeed(ItemStack itemstack, Block block, int metadata){
-        if(block.getMaterial() == Material.clay || block.getMaterial() == Material.sand || block.getMaterial() == Material.ground || block.getMaterial() == Material.grass){
+        if(block.getMaterial() == Material.wood || block.getMaterial() == Material.leaves){
             return ConfigurationValues.TOOL_SPEED_BASE * ConfigurationValues.TOOL_SPEED_MODIFIER;
         }
         return 1.0F;

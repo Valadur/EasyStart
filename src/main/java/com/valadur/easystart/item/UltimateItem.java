@@ -7,8 +7,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public class EasyUltimateTool extends Item {
-    public EasyUltimateTool(){
+public abstract class UltimateItem extends Item {
+    public UltimateItem(){
         super();
         setCreativeTab(CreativeTabs.tabMisc);
         setMaxStackSize(1);

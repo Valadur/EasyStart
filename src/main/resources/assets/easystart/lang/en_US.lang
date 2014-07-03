@@ -1,6 +1,8 @@
-item.easyPickaxeBasic.name=Basic Pickaxe
-item.easyPickaxeUltimate.name=Ultimate Pickaxe
-item.easyAxeBasic.name=Basic Axe
-item.easyAxeUltimate.name=Ultimate Axe
-item.easyShovelBasic.name=Basic Shovel
-item.easyShovelUltimate.name=Ultimate Shovel
+item.pickaxeBasic.name=Basic Pickaxe
+item.pickaxeUltimate.name=Ultimate Pickaxe
+item.axeBasic.name=Basic Axe
+item.axeUltimate.name=Ultimate Axe
+item.shovelBasic.name=Basic Shovel
+item.shovelUltimate.name=Ultimate Shovel
+item.swordBasic.name=Basic Sword
+item.swordUltimate.name=Ultimate Sword
