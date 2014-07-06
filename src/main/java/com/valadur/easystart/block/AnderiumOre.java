@@ -19,7 +19,7 @@ public class AnderiumOre extends BlockES {
         setHardness(3.0F);
         setResistance(5.0F);
         setStepSound(soundTypeStone);
-        setHarvestLevel("pickaxe",2);
+        setHarvestLevel("pickaxe",1);
     }
 
     @Override
