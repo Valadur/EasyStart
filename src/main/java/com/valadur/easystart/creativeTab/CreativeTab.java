@@ -13,7 +13,7 @@ public class CreativeTab {
 
         @Override
         public Item getTabIconItem(){
-            return ModItems.pickaxeUltimate;
+            return ModItems.anderiumPickaxe;
         }
 
         @Override

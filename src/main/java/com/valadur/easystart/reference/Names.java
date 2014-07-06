@@ -2,21 +2,18 @@ package com.valadur.easystart.reference;
 
 public class Names {
     public static class Items{
-        public static final String PICKAXE_BASIC = "pickaxeBasic";
-        public static final String PICKAXE_ULTIMATE = "pickaxeUltimate";
-        public static final String AXE_BASIC = "axeBasic";
-        public static final String AXE_ULTIMATE = "axeUltimate";
-        public static final String SHOVEL_BASIC = "shovelBasic";
-        public static final String SHOVEL_ULTIMATE = "shovelUltimate";
-        public static final String SWORD_BASIC = "swordBasic";
-        public static final String SWORD_ULTIMATE = "swordUltimate";
+        public static final String ANDERIUM_PICKAXE = "anderiumPickaxe";
+        public static final String ANDERIUM_AXE = "anderiumAxe";
+        public static final String ANDERIUM_SHOVEL = "anderiumShovel";
+        public static final String ANDERIUM_SWORD = "anderiumSword";
+        public static final String ANDERIUM_INGOT = "ingotAnderium";
     }
 
     public static class Blocks{
-        public static final String ORE_EASY = "oreEasy";
+        public static final String ANDERIUM_ORE = "oreAnderium";
     }
 
     public static class ToolMaterials{
-        public static final String ANDERIUM = "anderium";
+        public static final String ANDERIUM_NAME = "anderium";
     }
 }

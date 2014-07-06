@@ -5,5 +5,5 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class ToolMaterials {
 
-    public static Item.ToolMaterial anderium = EnumHelper.addToolMaterial(Names.ToolMaterials.ANDERIUM, 3, 32, 10.0F, 10.0F, 30);
+    public static Item.ToolMaterial ANDERIUM = EnumHelper.addToolMaterial(Names.ToolMaterials.ANDERIUM_NAME, 3, 2047, 30.0F, 10.0F, 30);
 }

@@ -5,14 +5,16 @@ import com.valadur.easystart.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
 
-public class ItemES extends Item {
+public class ItemToolShovel extends ItemSpade {
 
-    public ItemES(){
+    public ItemToolShovel(ToolMaterial material){
+        super(material);
         setCreativeTab(CreativeTab.ES_TAB);
-        setMaxStackSize(64);
+        setMaxStackSize(1);
+
     }
 
     @Override

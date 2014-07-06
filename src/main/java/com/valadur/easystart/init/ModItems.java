@@ -3,29 +3,24 @@ package com.valadur.easystart.init;
 import com.valadur.easystart.item.*;
 import com.valadur.easystart.reference.Names;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.item.Item;
 
 
 public class ModItems {
 
-    public static final ItemES pickaxeBasic = new PickaxeBasic();
-    public static final ItemES pickaxeUltimate = new PickaxeUltimate();
-    public static final ItemES axeBasic = new AxeBasic();
-    public static final ItemES axeUltimate = new AxeUltimate();
-    public static final ItemES shovelBasic = new ShovelBasic();
-    public static final ItemES shovelUltimate = new ShovelUltimate();
-    public static final ItemES swordBasic = new SwordBasic();
-    public static final ItemES swordUltimate = new SwordUltimate();
+    public static final Item anderiumPickaxe = new ItemAnderiumPickaxe();
+    public static final Item anderiumAxe = new ItemAnderiumAxe();
+    public static final Item anderiumSword = new ItemAnderiumSword();
+    public static final Item anderiumShovel = new ItemAnderiumShovel();
+    public static final Item anderiumIngot = new IngotAnderium();
 
 
     // Initialize all the items
     public static void init() {
-        GameRegistry.registerItem(pickaxeBasic, Names.Items.PICKAXE_BASIC);
-        GameRegistry.registerItem(pickaxeUltimate, Names.Items.PICKAXE_ULTIMATE);
-        GameRegistry.registerItem(axeBasic, Names.Items.AXE_BASIC);
-        GameRegistry.registerItem(axeUltimate, Names.Items.AXE_ULTIMATE);
-        GameRegistry.registerItem(shovelBasic, Names.Items.SHOVEL_BASIC);
-        GameRegistry.registerItem(shovelUltimate, Names.Items.SHOVEL_ULTIMATE);
-        GameRegistry.registerItem(swordBasic, Names.Items.SWORD_BASIC);
-        GameRegistry.registerItem(swordUltimate, Names.Items.SWORD_ULTIMATE);
+        GameRegistry.registerItem(anderiumAxe, Names.Items.ANDERIUM_AXE);
+        GameRegistry.registerItem(anderiumPickaxe, Names.Items.ANDERIUM_PICKAXE);
+        GameRegistry.registerItem(anderiumShovel, Names.Items.ANDERIUM_SHOVEL);
+        GameRegistry.registerItem(anderiumSword, Names.Items.ANDERIUM_SWORD);
+        GameRegistry.registerItem(anderiumIngot, Names.Items.ANDERIUM_INGOT);
     }
 }

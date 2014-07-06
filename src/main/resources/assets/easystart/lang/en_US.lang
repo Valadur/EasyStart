@@ -1,12 +1,9 @@
 key.categories.easystart=Easy Start
 
-tile.easystart:oreEasy.name=Easy Ore
+tile.easystart:oreAnderium.name=Anderium Ore
 
-item.easystart:pickaxeBasic.name=Basic Pickaxe
-item.easystart:pickaxeUltimate.name=Ultimate Pickaxe
-item.easystart:axeBasic.name=Basic Axe
-item.easystart:axeUltimate.name=Ultimate Axe
-item.easystart:shovelBasic.name=Basic Shovel
-item.easystart:shovelUltimate.name=Ultimate Shovel
-item.easystart:swordBasic.name=Basic Sword
-item.easystart:swordUltimate.name=Ultimate Sword
+item.easystart:anderiumPickaxe.name=Anderium Pickaxe
+item.easystart:anderiumAxe.name=Anderium Axe
+item.easystart:anderiumShovel.name=Anderium Shovel
+item.easystart:anderiumSword.name=Anderium Sword
+item.easystart:ingotAnderium.name=Anderium Ingot

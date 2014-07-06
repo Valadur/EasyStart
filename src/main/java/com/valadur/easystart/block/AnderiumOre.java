@@ -7,15 +7,15 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class OreEasy extends BlockES {
+public class AnderiumOre extends BlockES {
 
-    public OreEasy(){
+    public AnderiumOre(){
         this(Material.rock);
     }
 
-    public OreEasy(Material material) {
+    public AnderiumOre(Material material) {
         super(material);
-        setBlockName(Names.Blocks.ORE_EASY);
+        setBlockName(Names.Blocks.ANDERIUM_ORE);
         setHardness(3.0F);
         setResistance(5.0F);
         setStepSound(soundTypeStone);
@@ -24,6 +24,6 @@ public class OreEasy extends BlockES {
 
     @Override
     public Item getItemDropped(int metadata, Random random, int fortune) {
-        return Item.getItemFromBlock(ModBlocks.oreEasy);
+        return Item.getItemFromBlock(ModBlocks.oreAnderium);
     }
 }
