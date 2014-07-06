@@ -4,7 +4,7 @@ import com.valadur.easystart.reference.Names;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
 
-public class SwordBasic extends BasicItem {
+public class SwordBasic extends ItemBasic {
 
     public SwordBasic(){
         super();

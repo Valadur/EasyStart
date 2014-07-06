@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class PickaxeUltimate extends UltimateItem {
+public class PickaxeUltimate extends ItemUltimate {
     public PickaxeUltimate(){
         super();
         setUnlocalizedName(Names.Items.PICKAXE_ULTIMATE);

@@ -1,8 +1,12 @@
-item.pickaxeBasic.name=Basic Pickaxe
-item.pickaxeUltimate.name=Ultimate Pickaxe
-item.axeBasic.name=Basic Axe
-item.axeUltimate.name=Ultimate Axe
-item.shovelBasic.name=Basic Shovel
-item.shovelUltimate.name=Ultimate Shovel
-item.swordBasic.name=Basic Sword
-item.swordUltimate.name=Ultimate Sword
+key.categories.easystart=Easy Start
+
+tile.easystart:oreEasy.name=Easy Ore
+
+item.easystart:pickaxeBasic.name=Basic Pickaxe
+item.easystart:pickaxeUltimate.name=Ultimate Pickaxe
+item.easystart:axeBasic.name=Basic Axe
+item.easystart:axeUltimate.name=Ultimate Axe
+item.easystart:shovelBasic.name=Basic Shovel
+item.easystart:shovelUltimate.name=Ultimate Shovel
+item.easystart:swordBasic.name=Basic Sword
+item.easystart:swordUltimate.name=Ultimate Sword

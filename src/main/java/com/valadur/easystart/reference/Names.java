@@ -11,4 +11,12 @@ public class Names {
         public static final String SWORD_BASIC = "swordBasic";
         public static final String SWORD_ULTIMATE = "swordUltimate";
     }
+
+    public static class Blocks{
+        public static final String ORE_EASY = "oreEasy";
+    }
+
+    public static class ToolMaterials{
+        public static final String ANDERIUM = "anderium";
+    }
 }

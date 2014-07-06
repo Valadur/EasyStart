@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class PickaxeBasic extends BasicItem {
+public class PickaxeBasic extends ItemBasic {
 
     public PickaxeBasic(){
         super();

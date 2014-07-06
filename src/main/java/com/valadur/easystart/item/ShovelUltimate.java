@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class ShovelUltimate extends UltimateItem {
+public class ShovelUltimate extends ItemUltimate {
 
     public ShovelUltimate() {
         super();

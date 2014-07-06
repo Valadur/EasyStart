@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class ShovelBasic extends BasicItem {
+public class ShovelBasic extends ItemBasic {
 
     public ShovelBasic() {
         super();

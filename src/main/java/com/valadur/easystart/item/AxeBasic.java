@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 
-public class AxeBasic extends BasicItem {
+public class AxeBasic extends ItemBasic {
 
     public AxeBasic() {
         super();

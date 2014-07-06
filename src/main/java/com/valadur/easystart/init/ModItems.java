@@ -3,19 +3,18 @@ package com.valadur.easystart.init;
 import com.valadur.easystart.item.*;
 import com.valadur.easystart.reference.Names;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.item.Item;
 
 
 public class ModItems {
 
-    public static final Item pickaxeBasic = new PickaxeBasic();
-    public static final Item pickaxeUltimate = new PickaxeUltimate();
-    public static final Item axeBasic = new AxeBasic();
-    public static final Item axeUltimate = new AxeUltimate();
-    public static final Item shovelBasic = new ShovelBasic();
-    public static final Item shovelUltimate = new ShovelUltimate();
-    public static final Item swordBasic = new SwordBasic();
-    public static final Item swordUltimate = new SwordUltimate();
+    public static final ItemES pickaxeBasic = new PickaxeBasic();
+    public static final ItemES pickaxeUltimate = new PickaxeUltimate();
+    public static final ItemES axeBasic = new AxeBasic();
+    public static final ItemES axeUltimate = new AxeUltimate();
+    public static final ItemES shovelBasic = new ShovelBasic();
+    public static final ItemES shovelUltimate = new ShovelUltimate();
+    public static final ItemES swordBasic = new SwordBasic();
+    public static final ItemES swordUltimate = new SwordUltimate();
 
 
     // Initialize all the items

@@ -1,6 +1,7 @@
 package com.valadur.easystart;
 
 import com.valadur.easystart.handler.ConfigurationHandler;
+import com.valadur.easystart.init.ModBlocks;
 import com.valadur.easystart.init.ModItems;
 import com.valadur.easystart.init.ModRecipes;
 import com.valadur.easystart.proxy.IProxy;
@@ -29,6 +30,7 @@ public class EasyStart {
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         ModItems.init();
         ModRecipes.init();
+        ModBlocks.init();
     }
 
     @Mod.EventHandler

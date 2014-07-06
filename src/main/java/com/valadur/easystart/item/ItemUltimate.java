@@ -1,19 +1,13 @@
 package com.valadur.easystart.item;
 
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
-public abstract class UltimateItem extends Item {
-    public UltimateItem(){
+public abstract class ItemUltimate extends ItemES {
+    public ItemUltimate(){
         super();
-        setCreativeTab(CreativeTabs.tabMisc);
-        setMaxStackSize(1);
-        // Set number of uses
-        setMaxDamage(127);
     }
 
     @Override
