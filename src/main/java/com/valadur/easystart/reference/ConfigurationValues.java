@@ -2,5 +2,5 @@ package com.valadur.easystart.reference;
 
 public class ConfigurationValues {
 
-    public static int TOOL_SPEED_MODIFIER = 2;
+    public static int ANDERIUM_SPEED_MODIFIER = 5;
 }

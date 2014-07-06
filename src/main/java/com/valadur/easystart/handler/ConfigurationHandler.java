@@ -11,7 +11,6 @@ import java.io.File;
 public class ConfigurationHandler {
 
     public static Configuration configuration;
-    public static boolean testValue = false;
 
     public static void init(File configFile) {
 
@@ -31,7 +30,7 @@ public class ConfigurationHandler {
     }
 
     private static void loadConfiguration(){
-        ConfigurationValues.TOOL_SPEED_MODIFIER = configuration.getInt("Tool_Speed", Configuration.CATEGORY_GENERAL, 2, 1, 4, "This sets the speed of the tools");
+        ConfigurationValues.ANDERIUM_SPEED_MODIFIER = configuration.getInt("Anderium_Tool_Speed", Configuration.CATEGORY_GENERAL, 5, 1, 20, "This sets the speed of the tools (Currently not in use)");
         if (configuration.hasChanged()){
             configuration.save();
         }

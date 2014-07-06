@@ -1,9 +1,7 @@
 package com.valadur.easystart;
 
 import com.valadur.easystart.handler.ConfigurationHandler;
-import com.valadur.easystart.init.ModBlocks;
-import com.valadur.easystart.init.ModItems;
-import com.valadur.easystart.init.ModRecipes;
+import com.valadur.easystart.init.*;
 import com.valadur.easystart.proxy.IProxy;
 import com.valadur.easystart.reference.Reference;
 import com.valadur.easystart.utility.LogHelper;
@@ -31,6 +29,8 @@ public class EasyStart {
         ModItems.init();
         ModRecipes.init();
         ModBlocks.init();
+        ModSmelting.init();
+        ModWorldGeneration.init();
     }
 
     @Mod.EventHandler

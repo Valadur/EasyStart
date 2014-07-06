@@ -2,6 +2,7 @@ package com.valadur.easystart.item;
 
 import com.valadur.easystart.creativeTab.CreativeTab;
 import com.valadur.easystart.reference.Textures;
+import com.valadur.easystart.utility.LogHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
