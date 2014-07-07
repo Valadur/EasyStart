@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 import java.util.Random;
 
-public class AnderiumOre extends BlockES {
+public class AnderiumOre extends OreES {
 
     public AnderiumOre(){
         this(Material.rock);
@@ -16,9 +16,6 @@ public class AnderiumOre extends BlockES {
     public AnderiumOre(Material material) {
         super(material);
         setBlockName(Names.Blocks.ANDERIUM_ORE);
-        setHardness(3.0F);
-        setResistance(5.0F);
-        setStepSound(soundTypeStone);
         setHarvestLevel("pickaxe",1);
     }
 

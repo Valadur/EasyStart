@@ -30,7 +30,7 @@ public class ConfigurationHandler {
     }
 
     private static void loadConfiguration(){
-        ConfigurationValues.ANDERIUM_SPEED_MODIFIER = configuration.getInt("Anderium_Tool_Speed", Configuration.CATEGORY_GENERAL, 5, 1, 20, "This sets the speed of the tools (Currently not in use)");
+        ConfigurationValues.ANDERIUM_QUANTITY = configuration.getInt("Anderium_Quantity", Configuration.CATEGORY_GENERAL, 1, 1, 4, "This sets the quantity of ores in the world");
         if (configuration.hasChanged()){
             configuration.save();
         }

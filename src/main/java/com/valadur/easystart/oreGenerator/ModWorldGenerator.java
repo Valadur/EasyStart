@@ -1,9 +1,11 @@
 package com.valadur.easystart.oreGenerator;
 
 import com.valadur.easystart.init.ModBlocks;
+import com.valadur.easystart.reference.ConfigurationValues;
 import com.valadur.easystart.utility.LogHelper;
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -31,14 +33,16 @@ public class ModWorldGenerator implements IWorldGenerator {
 
     private void generateNether(World world, Random random, int chunkx, int chunkz) {
 
+        // addOreSpawn(Blocks.netherrack, ModBlocks.oreAnderium, world, random, chunkx, chunkz, 16, 16, 3 + random.nextInt(2), 20 * ConfigurationValues.ANDERIUM_QUANTITY, 30, 80);
     }
 
     private void generateSurface(World world, Random random, int chunkx, int chunkz) {
-            addOreSpawn(ModBlocks.oreAnderium, world, random, chunkx, chunkz, 16, 16, 3 + random.nextInt(2), 20, 30, 70);
+        addOreSpawn(Blocks.stone, ModBlocks.oreAnderium, world, random, chunkx, chunkz, 16, 16, 3 + random.nextInt(2), 20 * ConfigurationValues.ANDERIUM_QUANTITY, 30, 80);
     }
 
     private void generateEnd(World world, Random random, int chunkx, int chunkz) {
 
+        // addOreSpawn(Blocks.end_stone, ModBlocks.oreAnderium, world, random, chunkx, chunkz, 16, 16, 3 + random.nextInt(2), 20 * ConfigurationValues.ANDERIUM_QUANTITY, 30, 80);
     }
 
     /*
@@ -57,7 +61,7 @@ public class ModWorldGenerator implements IWorldGenerator {
      * @param An  int for the maximum Y-Coordinate height at which this block may spawn
      */
 
-    public void addOreSpawn(Block block, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY) {
+    public void addOreSpawn(Block toBeReplacedBlock, Block replacingBlock, World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int maxVeinSize, int chancesToSpawn, int minY, int maxY) {
         assert maxY > minY : "The maximum Y must be greater than the Minimum Y";
         assert maxX > 0 && maxX <= 16 : "addOreSpawn: The Maximum X must be greater than 0 and less than 16";
         assert minY > 0 : "addOreSpawn: The Minimum Y must be greater than 0";
@@ -69,7 +73,7 @@ public class ModWorldGenerator implements IWorldGenerator {
             int posX = blockXPos + random.nextInt(maxX);
             int posY = minY + random.nextInt(diffBtwnMinMaxY);
             int posZ = blockZPos + random.nextInt(maxZ);
-            (new WorldGenMinable(block, maxVeinSize)).generate(world, random, posX, posY, posZ);
+            (new WorldGenMinable(replacingBlock, maxVeinSize, toBeReplacedBlock)).generate(world, random, posX, posY, posZ);
         }
     }
 }

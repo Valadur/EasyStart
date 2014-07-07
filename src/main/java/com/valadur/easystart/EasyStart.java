@@ -31,6 +31,7 @@ public class EasyStart {
         ModBlocks.init();
         ModSmelting.init();
         ModWorldGeneration.init();
+        ModFuel.init();
     }
 
     @Mod.EventHandler
