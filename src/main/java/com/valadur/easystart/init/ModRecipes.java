@@ -12,8 +12,11 @@ public class ModRecipes {
     // Initialize all the recipes
     public static void init() {
 
+        enchantItemStacks();
+
         // Shapeless recipes
         GameRegistry.addShapelessRecipe(new ItemStack(Items.cookie,4), new Object[]{Blocks.dirt});
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.anderiumIngotEnergized), new Object[]{ModItems.anderiumIngot, Items.redstone});
 
         // Shaped recipes
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumAxe, 1), "xx ", "xy ", " y ", 'x', new ItemStack(ModItems.anderiumIngot), 'y', new ItemStack(Items.stick,OreDictionary.WILDCARD_VALUE));
@@ -21,8 +24,29 @@ public class ModRecipes {
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumShovel, 1), " x ", " y ", " y ", 'x', new ItemStack(ModItems.anderiumIngot), 'y', new ItemStack(Items.stick,OreDictionary.WILDCARD_VALUE));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumSword, 1), " x ", " x ", " y ", 'x', new ItemStack(ModItems.anderiumIngot), 'y', new ItemStack(Items.stick,OreDictionary.WILDCARD_VALUE));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumHelmet, 1), "xxx", "x x", "   ", 'x', new ItemStack(ModItems.anderiumIngot));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumHelmet, 1), "   ", "xxx", "x x", 'x', new ItemStack(ModItems.anderiumIngot));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumChestplate, 1), "x x", "xxx", "xxx", 'x', new ItemStack(ModItems.anderiumIngot));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumLeggings, 1), "xxx", "x x", "x x", 'x', new ItemStack(ModItems.anderiumIngot));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumBoots, 1), "x x", "x x", "   ", 'x', new ItemStack(ModItems.anderiumIngot));
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumBoots, 1), "   ", "x x", "x x", 'x', new ItemStack(ModItems.anderiumIngot));
+        GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumHelmet, "xxx", "x x", "   ", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
+        GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumHelmet, "   ", "xxx", "x x", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
+        GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumChestplate, "x x", "xxx", "xxx", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
+        GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumLeggings, "xxx", "x x", "x x", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
+        GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumBoots, "x x", "x x", "   ", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
+        GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumBoots, "   ", "x x", "x x", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
+        GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumPickaxe, "xxx", " y ", " y ", 'x', new ItemStack(ModItems.anderiumIngotEnergized), 'y', new ItemStack(Items.stick,OreDictionary.WILDCARD_VALUE));
+    }
+
+    private static void enchantItemStacks() {
+        ModItems.enchantedAnderiumHelmet.addEnchantment(Enchantment.blastProtection, 4);
+        ModItems.enchantedAnderiumHelmet.addEnchantment(Enchantment.projectileProtection, 4);
+        ModItems.enchantedAnderiumChestplate.addEnchantment(Enchantment.blastProtection, 4);
+        ModItems.enchantedAnderiumChestplate.addEnchantment(Enchantment.projectileProtection, 4);
+        ModItems.enchantedAnderiumLeggings.addEnchantment(Enchantment.blastProtection, 4);
+        ModItems.enchantedAnderiumLeggings.addEnchantment(Enchantment.projectileProtection, 4);
+        ModItems.enchantedAnderiumBoots.addEnchantment(Enchantment.blastProtection, 4);
+        ModItems.enchantedAnderiumBoots.addEnchantment(Enchantment.projectileProtection, 4);
+        ModItems.enchantedAnderiumPickaxe.addEnchantment(Enchantment.fortune, 3);
     }
 }

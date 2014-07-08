@@ -11,6 +11,7 @@ public class Names {
         public static final String ANDERIUM_CHESTPLATE = "anderiumChestplate";
         public static final String ANDERIUM_LEGGINGS = "anderiumLeggings";
         public static final String ANDERIUM_BOOTS = "anderiumBoots";
+        public static final String ANDERIUM_INGOT_ENERGIZED = "ingotAnderiumEnergized";
     }
 
     public static class Blocks{

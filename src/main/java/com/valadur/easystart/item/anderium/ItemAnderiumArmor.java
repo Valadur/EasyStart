@@ -4,11 +4,8 @@ import com.valadur.easystart.creativeTab.CreativeTab;
 import com.valadur.easystart.init.ModItems;
 import com.valadur.easystart.item.ItemArmorES;
 import com.valadur.easystart.reference.Textures;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.world.World;
 
 public class ItemAnderiumArmor extends ItemArmorES {
 
@@ -29,11 +26,5 @@ public class ItemAnderiumArmor extends ItemArmorES {
         else{
             return null;
         }
-    }
-
-    @Override
-    public void onCreated(ItemStack itemStack, World world, EntityPlayer player){
-        itemStack.addEnchantment(Enchantment.unbreaking, 4);
-        itemStack.addEnchantment(Enchantment.thorns, 4);
     }
 }
