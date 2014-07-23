@@ -2,7 +2,6 @@ package com.valadur.easystart.oreGenerator;
 
 import com.valadur.easystart.init.ModBlocks;
 import com.valadur.easystart.reference.ConfigurationValues;
-import com.valadur.easystart.utility.LogHelper;
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;

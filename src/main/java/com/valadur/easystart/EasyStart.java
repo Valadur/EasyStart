@@ -27,15 +27,15 @@ public class EasyStart {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         ModItems.init();
-        ModRecipes.init();
         ModBlocks.init();
-        ModSmelting.init();
         ModWorldGeneration.init();
-        ModFuel.init();
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event){
+        ModRecipes.init();
+        ModSmelting.init();
+        ModFuel.init();
     }
 
     @Mod.EventHandler
