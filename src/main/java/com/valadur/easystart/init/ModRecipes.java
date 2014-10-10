@@ -13,6 +13,7 @@ public class ModRecipes {
     // Initialize all the recipes
     public static void init() {
 
+        // Enchant the ItemStacks first so we can add the enchanted versions to the recipes
         enchantItemStacks();
 
         // Shapeless recipes
@@ -48,6 +49,8 @@ public class ModRecipes {
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumLeggings, 1), "xxx", "x x", "x x", 'x', new ItemStack(ModItems.anderiumIngot));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumBoots, 1), "x x", "x x", "   ", 'x', new ItemStack(ModItems.anderiumIngot));
         GameRegistry.addShapedRecipe(new ItemStack(ModItems.anderiumBoots, 1), "   ", "x x", "x x", 'x', new ItemStack(ModItems.anderiumIngot));
+
+        // Enchanted ones for the energized Anderium
         GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumHelmet, "xxx", "x x", "   ", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
         GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumHelmet, "   ", "xxx", "x x", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
         GameRegistry.addShapedRecipe(ModItems.enchantedAnderiumChestplate, "x x", "xxx", "xxx", 'x', new ItemStack(ModItems.anderiumIngotEnergized));
