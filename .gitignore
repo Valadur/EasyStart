@@ -13,6 +13,8 @@ hs_err_pid*
 
 .directory
 
+*.txt
+
 /out
 /eclipse
 /run
