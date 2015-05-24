@@ -19,6 +19,8 @@ hs_err_pid*
 /eclipse
 /run
 
+.idea
+
 EasyStart.iml
 EasyStart.ipr
 EasyStart.iws

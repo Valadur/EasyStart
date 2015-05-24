@@ -2,7 +2,7 @@ package com.valadur.easystart.handler;
 
 import com.valadur.easystart.init.ModItems;
 import com.valadur.easystart.reference.ConfigurationValues;
-import cpw.mods.fml.common.IFuelHandler;
+import net.minecraftforge.fml.common.IFuelHandler;
 import net.minecraft.item.ItemStack;
 
 public class FuelHandler implements IFuelHandler {

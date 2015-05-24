@@ -1,7 +1,7 @@
 package com.valadur.easystart.init;
 
 import com.valadur.easystart.handler.FuelHandler;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModFuel {
 

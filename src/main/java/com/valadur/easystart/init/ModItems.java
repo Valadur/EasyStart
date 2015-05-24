@@ -2,8 +2,7 @@ package com.valadur.easystart.init;
 
 import com.valadur.easystart.item.anderium.*;
 import com.valadur.easystart.reference.Names;
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.enchantment.Enchantment;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 

@@ -11,6 +11,6 @@ public class ModMaterial {
     }
 
     public static class ArmorMaterial {
-        public static ItemArmor.ArmorMaterial ANDERIUM_ARMOR = EnumHelper.addArmorMaterial(Names.Materials.ANDERIUM_NAME, 33, new int[]{3,8,6,3}, 30);
+        public static ItemArmor.ArmorMaterial ANDERIUM_ARMOR = EnumHelper.addArmorMaterial(Names.Materials.ANDERIUM_NAME, "Test", 30, new int[]{3,8,6,3},1);
     }
 }

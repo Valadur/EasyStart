@@ -2,7 +2,7 @@ package com.valadur.easystart.client.gui;
 
 import com.valadur.easystart.handler.ConfigurationHandler;
 import com.valadur.easystart.reference.Reference;
-import cpw.mods.fml.client.config.GuiConfig;
+import net.minecraftforge.fml.client.config.GuiConfig;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;

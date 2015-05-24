@@ -2,7 +2,7 @@ package com.valadur.easystart.oreGenerator;
 
 import com.valadur.easystart.init.ModBlocks;
 import com.valadur.easystart.reference.ConfigurationValues;
-import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraftforge.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
@@ -15,7 +15,7 @@ public class ModWorldGenerator implements IWorldGenerator {
 
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
-        switch (world.provider.dimensionId) {
+        switch (world.provider.getDimensionId()) {
             case 1:
                 generateEnd(world, random, chunkX * 16, chunkZ * 16);
                 break;

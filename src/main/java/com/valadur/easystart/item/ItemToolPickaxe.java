@@ -2,19 +2,12 @@ package com.valadur.easystart.item;
 
 import com.valadur.easystart.creativeTab.CreativeTab;
 import com.valadur.easystart.reference.Textures;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-
-import static net.minecraftforge.common.util.ForgeDirection.*;
 
 public class ItemToolPickaxe extends ItemPickaxe {
 
@@ -35,11 +28,11 @@ public class ItemToolPickaxe extends ItemPickaxe {
         return String.format("item.%s%s", Textures.RESOURCE_PREFIX, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
-    @Override
+    /*@Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister){
         itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
-    }
+    }*/
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName){
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);

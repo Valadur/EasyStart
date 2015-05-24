@@ -4,7 +4,7 @@ import com.valadur.easystart.block.BlockES;
 import com.valadur.easystart.block.AnderiumOre;
 import com.valadur.easystart.reference.Names;
 import com.valadur.easystart.reference.Reference;
-import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
