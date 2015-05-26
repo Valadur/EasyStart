@@ -2,6 +2,7 @@ package com.valadur.easystart.oreGenerator;
 
 import com.valadur.easystart.init.ModBlocks;
 import com.valadur.easystart.reference.ConfigurationValues;
+import net.minecraft.util.BlockPos;
 import net.minecraftforge.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
@@ -72,7 +73,8 @@ public class ModWorldGenerator implements IWorldGenerator {
             int posX = blockXPos + random.nextInt(maxX);
             int posY = minY + random.nextInt(diffBtwnMinMaxY);
             int posZ = blockZPos + random.nextInt(maxZ);
-            (new WorldGenMinable(replacingBlock, maxVeinSize, toBeReplacedBlock)).generate(world, random, posX, posY, posZ);
+            BlockPos blockPos = new BlockPos(posX,posY,posZ);
+            (new WorldGenMinable(ModBlocks.oreAnderium.getDefaultState(), maxVeinSize)).generate(world, random, blockPos);
         }
     }
 }

@@ -4,7 +4,9 @@ import com.valadur.easystart.creativeTab.CreativeTab;
 import com.valadur.easystart.reference.Textures;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.world.World;
+import net.minecraft.block.state.IBlockState;
+
+import java.util.Random;
 
 public class BlockES extends Block {
 
@@ -33,8 +35,7 @@ public class BlockES extends Block {
     }
 
     @Override
-    public void breakBlock(World world, int x, int y, int z, Block block, int meta)
-    {
-        super.breakBlock(world, x, y, z, block, meta);
+    public int quantityDropped(IBlockState state, int fortune, Random random){
+        return 1;
     }
 }

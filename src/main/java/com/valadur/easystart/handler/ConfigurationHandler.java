@@ -14,11 +14,9 @@ public class ConfigurationHandler {
 
     public static void init(File configFile) {
 
-        if (configuration == null) {
-            // Create the configuration object from the given configuration file
-            configuration = new Configuration(configFile);
-            loadConfiguration();
-        }
+        // Create the configuration object from the given configuration file
+        configuration = new Configuration(configFile);
+        loadConfiguration();
     }
 
     @SubscribeEvent

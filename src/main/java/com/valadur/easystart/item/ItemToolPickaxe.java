@@ -2,11 +2,14 @@ package com.valadur.easystart.item;
 
 import com.valadur.easystart.creativeTab.CreativeTab;
 import com.valadur.easystart.reference.Textures;
+import jdk.nashorn.internal.ir.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.BlockPos;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
 
 public class ItemToolPickaxe extends ItemPickaxe {
@@ -48,7 +51,7 @@ public class ItemToolPickaxe extends ItemPickaxe {
       This is actually Tinkers Construct code. Thanks for hosting it on github and help me learn to mod
     */
     @Override
-    public boolean onItemUse (ItemStack stack, EntityPlayer player, World world, int x, int y, int z, int side, float clickX, float clickY, float clickZ) {
+    public boolean onItemUse (ItemStack stack, EntityPlayer player, World world, BlockPos blockPos, EnumFacing facing, float clickX, float clickY, float clickZ) {
         /*if (world.isRemote)
             return true;*/
 
@@ -62,35 +65,12 @@ public class ItemToolPickaxe extends ItemPickaxe {
             if (nearbyStack != null) {
                 Item item = nearbyStack.getItem();
                 if (item instanceof ItemBlock) {
-                    int posX = x;
-                    int posY = y;
-                    int posZ = z;
+                    int posX = blockPos.getX();
+                    int posY = blockPos.getY();
+                    int posZ = blockPos.getZ();
                     int playerPosX = (int) Math.floor(player.posX);
                     int playerPosY = (int) Math.floor(player.posY);
                     int playerPosZ = (int) Math.floor(player.posZ);
-                    if (side == 0) {
-                        --posY;
-                    }
-
-                    if (side == 1) {
-                        ++posY;
-                    }
-
-                    if (side == 2) {
-                        --posZ;
-                    }
-
-                    if (side == 3) {
-                        ++posZ;
-                    }
-
-                    if (side == 4) {
-                        --posX;
-                    }
-
-                    if (side == 5) {
-                        ++posX;
-                    }
                     if (posX == playerPosX && (posY == playerPosY || posY == playerPosY + 1 || posY == playerPosY - 1) && posZ == playerPosZ) {
                         return false;
                     }
@@ -98,10 +78,9 @@ public class ItemToolPickaxe extends ItemPickaxe {
                     int dmg = nearbyStack.getItemDamage();
                     int count = nearbyStack.stackSize;
 
-                    used = item.onItemUse(nearbyStack, player, world, x, y, z, side, clickX, clickY, clickZ);
+                    used = item.onItemUse(nearbyStack, player, world, blockPos, facing, clickX, clickY, clickZ);
                     // handle creative mode
                     if (player.capabilities.isCreativeMode) {
-                        // fun fact: vanilla minecraft does it exactly the same way
                         nearbyStack.setItemDamage(dmg);
                         nearbyStack.stackSize = count;
                     }
